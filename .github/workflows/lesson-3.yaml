@@ -21,12 +21,12 @@ jobs:
 
 
   function_test:
-  runs-on: ubuntu-latest
-  defaults:
-    run:
-      working-directory: frontend
-  steps:
-    - uses: actions/checkout@v7.0.1
-    - run: npm install
-    - name: Run functional tests
-      run: npm test
+    runs-on: ubuntu-latest
+    defaults:
+      run:
+        working-directory: frontend
+    steps:
+      - uses: actions/checkout@v7.0.1
+      - run: npm install
+      - name: Run functional tests
+        run: npm test
